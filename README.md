@@ -40,4 +40,4 @@ curl -i -X GET http://localhost:8080/board/1
 
 ## 보드 전체 목록 가져오기 
 
-curl -i -X GET http://localhost:8080/board/all?page=1&size=10?sort=id,desc
+curl -i -X GET http://localhost:8080/board/all?page=0&size=10?sort=id,desc
