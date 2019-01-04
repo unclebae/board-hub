@@ -49,7 +49,7 @@ public class BoardController {
     }
 
     @GetMapping("/category/{category}")
-    public ResponseEntity<ResponseMessage<BoardDTO>> findBoardById(@PathVariable("category") String category, Pageable pageable) {
+    public ResponseEntity<ResponseMessage<Page<BoardDTO>>> findBoardById(@PathVariable("category") String category, Pageable pageable) {
         return ResponseEntity.of(Optional.ofNullable(boardService.findAllBoardByCategoryId(category, pageable)));
     }
 }
